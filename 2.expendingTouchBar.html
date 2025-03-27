@@ -1,0 +1,30 @@
+<style>
+  :root {
+    --search-border: #bbb;
+    --search-fochs-border: #3a71ca;
+  }
+  .container {
+    padding: 2em;
+    width: 80%;
+    margin: auto;
+  }
+  .search-bar {
+    border-radius: 2px;
+    border: 1px solid #bbb;
+    margin: auto;
+    width: 30%;
+    font-size: x-large;
+    transition: all 0.3s;
+  }
+  .search-bar:focus {
+    width: 100%;
+  }
+  .search-bar:focus::placeholder {
+    color: transparent;
+  }
+</style>
+<body>
+  <div class="container">
+    <input type="search" class="search-bar" placeholder="Search..." />
+  </div>
+</body>
